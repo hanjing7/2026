@@ -1,28 +1,66 @@
 # jh_portfolio26
-Where the code base, presentation and logics resides
 
-  # Add Display Cards Component
+This repository contains the source code for my portfolio and UI components.
+The project is built with **Vite + React + TypeScript** and deployed via **GitHub Pages**.
 
-  This is a code bundle for Add Display Cards Component. The original project is available at https://www.figma.com/design/rdA7AnMtOc3zoAs1kUsgFP/Add-Display-Cards-Component.
+Design source (Figma):
+https://www.figma.com/design/rdA7AnMtOc3zoAs1kUsgFP/Add-Display-Cards-Component
 
-  ## Running the code
+---
 
-  Run `npm i` to install the dependencies.
+## Project Structure
 
-  Run `npm run dev` to start the development server.
-  
+- `src/` – React / TypeScript source code
+- `index.html` – Vite entry file
+- `vite.config.ts` – Vite configuration (includes GitHub Pages base path)
+- `build/` – Production build output (generated, not committed)
+- `gh-pages` branch – Deployment branch (auto-generated)
+
+- 项目 condig 源头: https://github.com/hanjing7/portfolio26
+
+---
+
+## Local Development (Run on localhost)
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+If you encounter dependency issues:
+
+```bash
 rm -rf node_modules package-lock.json
-npm cache verify  
-npm install     
-npm run dev                          
+npm cache verify
+npm install
 
-publish
-npm install --save-dev gh-pages
+```
 
+Start development server
 
-git fetch origin 
-git rebase origin/main
-git rebase --continue  
+```bash
+npm run dev
+```
+
+Open in browser:
+http://localhost:3000
+
+### Update Code (Normal Workflow)
+
+```bash
 git add .
-git commit -m "message"
-git push origin main 
+git commit -m "update content or layout"
+git push origin main
+```
+
+## Deploy (Publish to GitHub Pages)
+
+Build and deploy
+
+```bash
+npm run deploy
+```
+
+Live Site
+https://hanjing7.github.io/jh_portfolio26/
