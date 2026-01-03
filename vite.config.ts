@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/jh_portfolio26/", // 👈 必须和 repo 名一致
+  base: "/2026/", // 👈 必须和 repo 名一致
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
     alias: {

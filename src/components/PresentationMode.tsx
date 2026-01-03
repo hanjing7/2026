@@ -29,7 +29,8 @@ const customCards = [
   {
     icon: <Brain className="size-4" />,
     title: "System Thinking",
-    description: "Consolidate your upstream product logic with downstream sales & customers need",
+    description:
+      "Consolidate your upstream product logic with downstream sales & customers need",
     className:
       "[grid-area:stack] translate-x-8 translate-y-16 transition-transform duration-700 hover:-translate-y-12",
   },
@@ -48,15 +49,19 @@ interface PresentationModeProps {
   projects: Project[];
 }
 
-export function PresentationMode({ onNavigate, workItems, projects }: PresentationModeProps) {
+export function PresentationMode({
+  onNavigate,
+  workItems,
+  projects,
+}: PresentationModeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const scrollToNextSection = () => {
     if (containerRef.current) {
-      const sections = containerRef.current.querySelectorAll('.parallax-item');
+      const sections = containerRef.current.querySelectorAll(".parallax-item");
       if (sections.length > 1) {
-        sections[1].scrollIntoView({ behavior: 'smooth' });
+        sections[1].scrollIntoView({ behavior: "smooth" });
       }
     }
   };
@@ -70,21 +75,22 @@ export function PresentationMode({ onNavigate, workItems, projects }: Presentati
             {/* Left Side - Hero Content */}
             <div className="flex w-full flex-col items-start justify-center px-4 py-12 sm:px-6 md:px-8 lg:w-1/2 lg:px-16 lg:py-20">
               <div className="max-w-xl space-y-6">
-                <h1 className="rainbow-text">
-                  Jing Han
-                </h1>
+                <h1 className="rainbow-text">Jing Han</h1>
                 <h3>Design AI Enablement Solutions</h3>
                 <p className="text-xl text-muted-foreground">
-                  Move fast with AI automation, reusabledesign frameworks with my design creativity, developer passion
-                  and product systems thinking.
-                  Transform Scattered processes into coherency
+                  Driving rapid product introduction with AI automation,
+                  reusabledesign frameworks with my design creativity, developer
+                  passion and product systems thinking. Transform Scattered
+                  processes into coherency
                 </p>
-                
+
                 {/* Mobile: "I can..." button triggers modal */}
                 <div className="flex flex-wrap gap-4">
                   <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                     <DialogTrigger asChild>
-                      <RainbowButton className="lg:hidden">I can...</RainbowButton>
+                      <RainbowButton className="lg:hidden">
+                        I can...
+                      </RainbowButton>
                     </DialogTrigger>
                     <DialogContent className="max-w-[95vw] sm:max-w-[500px] p-0 overflow-hidden">
                       <DialogHeader className="px-6 pt-6 pb-2">
@@ -97,9 +103,12 @@ export function PresentationMode({ onNavigate, workItems, projects }: Presentati
                       </div>
                     </DialogContent>
                   </Dialog>
-                  
+
                   {/* Desktop: "Get to know me" button (hidden on mobile) */}
-                  <RainbowButton onClick={scrollToNextSection} className="hidden lg:inline-flex">
+                  <RainbowButton
+                    onClick={scrollToNextSection}
+                    className="hidden lg:inline-flex"
+                  >
                     Get to know me
                   </RainbowButton>
                 </div>
@@ -117,15 +126,25 @@ export function PresentationMode({ onNavigate, workItems, projects }: Presentati
       {/* Section 2: My Work */}
       <div className="parallax-item">
         <div className="parallax-content bg-muted/30" style={{ zIndex: 2 }}>
-          <div className="w-full px-4 py-12 sm:px-6 md:px-8 lg:px-16 lg:py-20" style={{ minHeight: "100vh" }}>
+          <div
+            className="w-full px-4 py-12 sm:px-6 md:px-8 lg:px-16 lg:py-20"
+            style={{ minHeight: "100vh" }}
+          >
             <div className="mx-auto max-w-7xl space-y-4">
               <div className="space-y-4">
                 <h2>Featured Work</h2>
               </div>
-              
-              <div className="grid gap-8 grid-cols-1 md:grid-cols-2" style={{ overflow: 'visible' }}>
+
+              <div
+                className="grid gap-8 grid-cols-1 md:grid-cols-2"
+                style={{ overflow: "visible" }}
+              >
                 {workItems.map((workItem) => (
-                  <FeaturedWorkCard key={workItem.id} {...workItem} onNavigate={onNavigate} />
+                  <FeaturedWorkCard
+                    key={workItem.id}
+                    {...workItem}
+                    onNavigate={onNavigate}
+                  />
                 ))}
               </div>
             </div>
@@ -136,18 +155,29 @@ export function PresentationMode({ onNavigate, workItems, projects }: Presentati
       {/* Section 3: Earlier Projects */}
       <div className="parallax-item">
         <div className="parallax-content bg-background" style={{ zIndex: 3 }}>
-          <div className="w-full px-4 py-12 sm:px-6 md:px-8 lg:px-16 lg:py-20" style={{ minHeight: "100vh" }}>
+          <div
+            className="w-full px-4 py-12 sm:px-6 md:px-8 lg:px-16 lg:py-20"
+            style={{ minHeight: "100vh" }}
+          >
             <div className="mx-auto max-w-7xl space-y-12">
               <div className="space-y-4">
                 <h2>Earlier Projects</h2>
                 <p className="text-xl text-muted-foreground">
-                  A selection of my recent work showcasing innovation and creativity
+                  A selection of my recent work showcasing innovation and
+                  creativity
                 </p>
               </div>
-              
-              <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" style={{ overflow: 'visible' }}>
+
+              <div
+                className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                style={{ overflow: "visible" }}
+              >
                 {projects.map((project) => (
-                  <ProjectCard key={project.id} {...project} onNavigate={onNavigate} />
+                  <ProjectCard
+                    key={project.id}
+                    {...project}
+                    onNavigate={onNavigate}
+                  />
                 ))}
               </div>
             </div>
