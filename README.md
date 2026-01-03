@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # jh_portfolio26
 Where the code base, presentation and logics resides
-=======
 
   # Add Display Cards Component
 
@@ -13,4 +11,18 @@ Where the code base, presentation and logics resides
 
   Run `npm run dev` to start the development server.
   
->>>>>>> 4333dfa (initial vibe coding upload)
+rm -rf node_modules package-lock.json
+npm cache verify  
+npm install     
+npm run dev                          
+
+publish
+npm install --save-dev gh-pages
+
+
+git fetch origin 
+git rebase origin/main
+git rebase --continue  
+git add .
+git commit -m "message"
+git push origin main 
