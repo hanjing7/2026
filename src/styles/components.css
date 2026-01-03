@@ -1,0 +1,293 @@
+/**
+ * Standardized Component Styles
+ * Following industry best practices for semantic styling
+ */
+
+/* ================================
+   COLOR SYSTEM
+   ================================ */
+:root {
+  /* Brand Accent Color - Orange */
+  --color-accent-primary: #f97316; /* orange-500 */
+  --color-accent-primary-hover: #ea580c; /* orange-600 */
+  --color-accent-primary-light: #fb923c; /* orange-400 */
+  
+  /* Neutral Colors */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  /* Semantic Colors */
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-muted: var(--color-gray-500);
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: var(--color-gray-100);
+  --color-bg-muted: var(--color-gray-50);
+}
+
+/* ================================
+   TYPOGRAPHY SYSTEM
+   ================================ */
+
+/* Display Headings - For hero sections */
+.display-1 {
+  font-size: 3.75rem; /* 60px */
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+.display-2 {
+  font-size: 3rem; /* 48px */
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+/* Standard Headings */
+.heading-1 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.heading-2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.heading-3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.heading-4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+}
+
+.heading-5 {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.heading-6 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+/* Body Text */
+.body-large {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-text-primary);
+}
+
+.body-base {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.body-small {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.body-xs {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+/* Labels & Captions */
+.label-large {
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.label-base {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.label-small {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.caption {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+/* Description Text */
+.description {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+}
+
+.description-large {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+}
+
+/* ================================
+   ACCENT COLOR UTILITIES
+   ================================ */
+
+.text-accent {
+  color: var(--color-accent-primary);
+}
+
+.text-accent-hover {
+  transition: color 0.2s ease-in-out;
+}
+
+.text-accent-hover:hover {
+  color: var(--color-accent-primary-hover);
+}
+
+.bg-accent {
+  background-color: var(--color-accent-primary);
+}
+
+.bg-accent-hover {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-accent-hover:hover {
+  background-color: var(--color-accent-primary-hover);
+}
+
+.border-accent {
+  border-color: var(--color-accent-primary);
+}
+
+/* ================================
+   SECTION BACKGROUNDS
+   ================================ */
+
+.section-bg-primary {
+  background-color: var(--color-bg-primary);
+}
+
+.section-bg-secondary {
+  background-color: var(--color-bg-secondary);
+}
+
+.section-bg-muted {
+  background-color: var(--color-bg-muted);
+}
+
+/* Pure grey background without pattern - for About page sections */
+.section-bg-grey {
+  background-color: #f3f4f6;
+  background-image: none;
+}
+
+/* ================================
+   LINK STYLES
+   ================================ */
+
+.link-accent {
+  color: var(--color-accent-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.link-accent:hover {
+  color: var(--color-accent-primary-hover);
+}
+
+.link-secondary {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.link-secondary:hover {
+  color: var(--color-accent-primary);
+}
+
+/* ================================
+   UTILITY CLASSES
+   ================================ */
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.bullet-accent {
+  color: var(--color-accent-primary);
+}
+
+/* ================================
+   RESPONSIVE TYPOGRAPHY
+   ================================ */
+
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 2.5rem; /* 40px */
+  }
+  
+  .display-2 {
+    font-size: 2rem; /* 32px */
+  }
+  
+  .heading-1 {
+    font-size: 1.875rem; /* 30px */
+  }
+  
+  .heading-2 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  .description-large {
+    font-size: 1.125rem; /* 18px */
+  }
+}

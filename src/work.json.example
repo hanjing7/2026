@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sales-proposal-automation",
+    "title": "Sales Proposal Automation",
+    "description": "A global sales-enablement platform that automates the transition from complex internal data to standardized, high-impact proposals, resulting in a 9% increase in win rates and 3% accelerated deal velocity.",
+    "categories": ["Development", "SaaS", "Enterprise"],
+    "year": "2 years",
+    "images": [
+      "https://cdn.gamma.app/07p9lb66qfoscak/37558e68600e474e93832223f0efad9f/original/image.png"
+    ],
+    "gammaUrl": "https://gamma.app/embed/100dzcfkfdcq576",
+    "featuredTag": "Patent: P6515US01"
+  },
+  {
+    "id": "cpq-central-quote",
+    "title": "CPQ (Central Quote)",
+    "description": "Designed a guided selling system within Salesforce, integrated with CRM and ERP platforms to scale up deal volume.",
+    "categories": ["Development", "AI/ML", "Salesforce"],
+    "year": "1 year on-going",
+    "images": [
+      "https://cdn.gamma.app/07p9lb66qfoscak/4a7c19e4704f4e99a3dedba52081db5d/original/image.png"
+    ],
+    "gammaUrl": "https://gamma.app/embed/luhvaiholalzeot",
+    "featuredTag": "UX Design Award Nominated"
+  }
+]

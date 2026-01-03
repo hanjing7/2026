@@ -1,0 +1,76 @@
+[
+  {
+    "id": "new-product-introduction",
+    "title": "New Product Introduction Flow",
+    "description": "Launching a product shouldn't feel like navigating a minefield. Manual errors weren't just a 'task' problem—they were a 'connection' problem. Integrating a smarter process across the entire organization, we didn't just simplify the workflow, but brings the potential of accurate collaboration:",
+    "tags": [
+      { "name": "Time-to-market ↓90%" },
+      { "name": "Product Config Months → Days" },
+      { "name": "Product Hierarchy Maintenance" },
+      { "name": "Compatibility Rules" }
+    ],
+    "imageUrl": "https://cdn.gamma.app/07p9lb66qfoscak/591de4e6373f4229840b9f900e087cef/original/image.png",
+    "gammaUrl": "https://hanjing.medium.com/npi-d81cabd403e8",
+    "featuredTag": "Enterprise SaaS"
+  },
+  {
+    "id": "pure-as-a-service",
+    "title": "Pure as a Service",
+    "description": "Design for Pure's step into the storage services offering, how do we reorient the existing service metrics under the service model? Expands customers the flexibility to choose to consume storage via subscription, simplify storage tracking and procurement.",
+    "tags": [
+      { "name": "React Native" },
+      { "name": "Firebase" },
+      { "name": "Redux" },
+      { "name": "HealthKit" }
+    ],
+    "imageUrl": "https://cdn.gamma.app/07p9lb66qfoscak/bca2a869f70e400ea97aae22a80909fa/original/image.png",
+    "gammaUrl": "YOUR_GAMMA_URL_HERE",
+    "featuredTag": "B2B Platform"
+  },
+  {
+    "id": "partner-portal",
+    "title": "Partner Portal",
+    "description": "By replacing years of manual 'busy work' with a self-service portal, we've empowered our partners to own their growth—turning a days-long hurdle of user onboarding and specialized training into a seamless experience that happens in just a few clicks.",
+    "tags": [
+      { "name": "Seismic" },
+      { "name": "Product Launch" },
+      { "name": "Learning Management System" }
+    ],
+    "imageUrl": "https://cdn.gamma.app/07p9lb66qfoscak/01baa2ba56fd4647a5087bd0e41c6184/original/image.png",
+    "gammaUrl": "YOUR_GAMMA_URL_HERE",
+    "featuredTag": "Award Winner"
+  },
+  {
+    "id": "flasharray-redesign",
+    "title": "FlashArray Redesign",
+    "description": "Enabled pay-as-you-go capabilities by delivering subscription license-level measurements for the as-a-service model, helping customers budget storage expenses based on actual usage. Reimagined user workflows to align with Pure's forward-looking strategy.",
+    "tags": [
+      { "name": "A' Design Award Silver" }
+    ],
+    "imageUrl": "https://cdn.gamma.app/07p9lb66qfoscak/225cd996c7894387aac12e7fc83cfd63/original/image.png",
+    "gammaUrl": "YOUR_GAMMA_URL_HERE",
+    "featuredTag": "UI/UX Redesign"
+  },
+  {
+    "id": "use-ai-sell-best-price",
+    "title": "Use AI to Sell at the Best Price",
+    "description": "Help our BA scale the value of auto ML, predict the win and loss probability of sales opportunities.",
+    "tags": [
+      { "name": "A' Design Award Silver" }
+    ],
+    "imageUrl": "https://cdn.gamma.app/07p9lb66qfoscak/6929077b4f2c4b4b9cc3965cdc3bc8d3/original/image.png",
+    "gammaUrl": "YOUR_GAMMA_URL_HERE",
+    "featuredTag": "AI/ML"
+  },
+  {
+    "id": "injecting-enterprise-ai-lms",
+    "title": "Injecting Enterprise AI in LMS",
+    "description": "Proprietary business data directly into LMS models that effectively resolves the critical pain points associated with general-purpose models lacking team context and the slow, prohibitively expensive process of training custom models from scratch.",
+    "tags": [
+      { "name": "A' Design Award Silver" }
+    ],
+    "imageUrl": "https://cdn.gamma.app/07p9lb66qfoscak/7a4fdd246fb342e6ad8dde82d11d9fd4/original/image.png",
+    "gammaUrl": "YOUR_GAMMA_URL_HERE",
+    "featuredTag": "Enterprise AI"
+  }
+]
