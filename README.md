@@ -64,3 +64,5 @@ npm run deploy
 
 Live Site
 https://hanjing7.github.io/jh_portfolio26/
+Or
+https://hanjing7.github.io/2026/
