@@ -219,10 +219,10 @@ export function ArticlePage({
                       href={article.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group/main mt-4 inline-flex items-center text-sm font-medium link-accent"
+                      className="group/main mt-4 inline-flex items-center gap-1 text-sm font-medium link-accent"
                     >
                       Read on Medium
-                      <ExternalLink className="ml-1 h-4 w-4 opacity-0 transition-opacity group-hover/main:opacity-100" />
+                      <ExternalLink className="h-4 w-4 opacity-0 transition-opacity group-hover/main:opacity-100" />
                     </a>
 
                     {/* Related Articles Section */}

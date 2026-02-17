@@ -1,18 +1,23 @@
 "use client";
 
 import React from "react";
+import { Slot } from "@radix-ui/react-slot@1.1.2";
 import { cn } from "./utils";
 
 interface RainbowButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  asChild?: boolean;
+}
 
 export const RainbowButton = React.forwardRef<
   HTMLButtonElement,
   RainbowButtonProps
 >(
-  ({ children, className, ...props }, ref) => {
+  ({ children, className, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : "button";
+    
     return (
-      <button
+      <Comp
         ref={ref}
         className={cn(
           "group relative inline-flex h-11 animate-rainbow cursor-pointer items-center justify-center rounded-xl border-0 bg-[length:200%] px-8 py-2 font-medium text-primary-foreground transition-all hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -31,7 +36,7 @@ export const RainbowButton = React.forwardRef<
         {...props}
       >
         {children}
-      </button>
+      </Comp>
     );
   }
 );

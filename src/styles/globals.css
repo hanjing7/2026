@@ -27,6 +27,12 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   
+  /* Layout Spacing Tokens - Ensures consistent alignment */
+  --section-padding-x: 1rem;        /* Mobile: 16px */
+  --section-padding-y: 3rem;        /* Mobile: 48px */
+  --section-max-width: 80rem;       /* 1280px (max-w-7xl) */
+  --content-max-width: 36rem;       /* 576px (max-w-xl) */
+  
   /* Color Variables */
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);

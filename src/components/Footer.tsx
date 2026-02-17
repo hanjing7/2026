@@ -31,9 +31,9 @@ export const Footer = React.forwardRef<HTMLElement, FooterProps>(
 			label: 'LinkedIn',
 		},
 		{
-			icon: Codepen,
-			href: 'https://codepen.io/Jing-Han-the-scripter/collections/',
-			label: 'CodePen',
+			icon: PenTool,
+			href: 'https://medium.com/@hanjing',
+			label: 'Medium',
 		},
 		{
 			icon: Youtube,
@@ -41,9 +41,9 @@ export const Footer = React.forwardRef<HTMLElement, FooterProps>(
 			label: 'YouTube',
 		},
 		{
-			icon: PenTool,
-			href: 'https://medium.com/@hanjing',
-			label: 'Medium',
+			icon: Codepen,
+			href: 'https://codepen.io/Jing-Han-the-scripter/collections/',
+			label: 'CodePen',
 		},
 		{
 			icon: Dribbble,

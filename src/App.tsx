@@ -16,6 +16,11 @@ export default function App() {
   const [workItems, setWorkItems] = useState<WorkItem[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
 
+  // Set document title
+  useEffect(() => {
+    document.title = "Jing Han - Design AI Enablement Solutions";
+  }, []);
+
   // Fetch work items and projects on mount
   useEffect(() => {
     let cancelled = false;

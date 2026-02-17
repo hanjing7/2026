@@ -100,8 +100,8 @@
     --spacing: .25rem;
     --container-xs: 20rem;
     --container-lg: 32rem;
-    --container-xl: 36rem;
     --container-2xl: 42rem;
+    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
     --container-7xl: 80rem;
@@ -261,6 +261,9 @@
     letter-spacing: inherit;
     color: inherit;
     opacity: 1;
+    --lightningcss-light: initial;
+    --lightningcss-dark: ;
+    color-scheme: light;
     background-color: #0000;
     border-radius: 0;
   }
@@ -272,6 +275,9 @@
     letter-spacing: inherit;
     color: inherit;
     opacity: 1;
+    --lightningcss-light: initial;
+    --lightningcss-dark: ;
+    color-scheme: light;
     background-color: #0000;
     border-radius: 0;
   }
@@ -807,10 +813,6 @@
     margin-left: -1px;
   }
 
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
-  }
-
   .line-clamp-4 {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -1032,6 +1034,10 @@
     max-width: var(--container-2xl);
   }
 
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
@@ -1058,10 +1064,6 @@
 
   .max-w-\[calc\(100\%-2rem\)\] {
     max-width: calc(100% - 2rem);
-  }
-
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
 
   .max-w-xs {
@@ -1255,6 +1257,10 @@
 
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
   }
 
   .gap-8 {
@@ -1911,6 +1917,10 @@
     color: var(--foreground);
   }
 
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -2152,6 +2162,18 @@
   }
 
   @media (hover: hover) {
+    .group-hover\/action\:opacity-100:is(:where(.group\/action):hover *) {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\/badge\:opacity-100:is(:where(.group\/badge):hover *) {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
     .group-hover\/child\:opacity-100:is(:where(.group\/child):hover *) {
       opacity: 1;
     }
@@ -2159,6 +2181,12 @@
 
   @media (hover: hover) {
     .group-hover\/main\:opacity-100:is(:where(.group\/main):hover *) {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    .group-hover\/resume\:opacity-100:is(:where(.group\/resume):hover *) {
       opacity: 1;
     }
   }
@@ -3592,6 +3620,10 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --section-padding-x: 1rem;
+  --section-padding-y: 3rem;
+  --section-max-width: 80rem;
+  --content-max-width: 36rem;
   --background: #fff;
   --foreground: oklch(.145 0 0);
   --card: #fff;
